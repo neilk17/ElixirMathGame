@@ -57,6 +57,11 @@ public class GameController : MonoBehaviour
     public GameObject maxText;
 
     int slotIndex = 0;
+    int numOfNumbers = 0;
+    int numOfOperators = 0;
+
+    public GameObject winUI;
+    public GameObject failUI;
 
     //Dictionary<int, List<string>> problemSpace = new Dictionary<int, List<string>>();
     List<string> problemSpace = new List<string>();
@@ -65,8 +70,21 @@ public class GameController : MonoBehaviour
 
     int answer;
     int progress = 0;
+
+    public GameObject numberEffect;
+    public GameObject operatorEffect;
+
+    float numEffectTime;
+    float opEffectTime;
+
+    float numEffectMaximum = 2000f;
+    float opEffectMaximum = 2000f;
+
     void Start()
     {
+        numEffectTime = numEffectMaximum;
+        opEffectTime = opEffectMaximum;
+
         numbers.Add(n1);
         numbers.Add(n2);
         numbers.Add(n3);
@@ -105,16 +123,76 @@ public class GameController : MonoBehaviour
 
         TestingProblemSpace();
         SpawnPotions();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (progress == answer)
+        {
+            PauseGame();
+            Win();
+        }
+
+        if (progress < 0 || progress > barMax || numOfNumbers <= 0)
+        {
+            PauseGame();
+            EndGame();
+        }
         
+        if (numEffectTime < numEffectMaximum)
+        {
+            numEffectTime += Time.timeScale;
+        } else
+        {
+            numberEffect.SetActive(false);
+        }
+
+        if (opEffectTime < opEffectMaximum)
+        {
+            opEffectTime += Time.timeScale;
+        } else
+        {
+            operatorEffect.SetActive(false);
+        }
+        
+    }
+
+    void PauseGame()
+    {
+        Time.timeScale = 0f;
+    }
+
+    void ResumeGame()
+    {
+        Time.timeScale = 1f;
+    }
+
+    void Win()
+    {
+        numberEffect.SetActive(false);
+        operatorEffect.SetActive(false);
+        winUI.SetActive(true);
+    }
+
+    void EndGame()
+    {
+        numberEffect.SetActive(false);
+        operatorEffect.SetActive(false);
+        failUI.SetActive(true);
     }
 
     void SpawnPotions()
     {
+        ResumeGame();
+
+        numEffectTime = numEffectMaximum;
+        opEffectTime = opEffectMaximum;
+
+        winUI.SetActive(false);
+        failUI.SetActive(false);
+
         int numberIndex = 0;
         int operatorIndex = 0;
 
@@ -148,9 +226,11 @@ public class GameController : MonoBehaviour
             operators[k].SetActive(false);
         }
 
+        numOfNumbers = numberIndex - 1;
+        numOfOperators = operatorIndex - 1;
     }
 
-    private void ResetGame()
+    public void ResetGame()
     {
         progress = 0;
         slotIndex = 0;
@@ -169,6 +249,7 @@ public class GameController : MonoBehaviour
         }
         inputs = "";
         energyBar.size = 0f;
+        SpawnPotions();
     }
 
     void TestingProblemSpace()
@@ -193,8 +274,16 @@ public class GameController : MonoBehaviour
         if (Array.IndexOf(operatorList, value) == -1)
         {
             evaluate();
+            numEffectTime = 0f;
+            numberEffect.SetActive(true);
+        } else
+        {
+            opEffectTime = 0f;
+            operatorEffect.SetActive(true);
         }
-        energyBar.size = progress / barMax;
+        float portion = progress / barMax;
+        energyBar.size = portion;
+
     }
 
     void evaluate()
@@ -205,7 +294,11 @@ public class GameController : MonoBehaviour
 
     public bool validInput(string value)
     {
-        if (Array.IndexOf(operatorList, value) > -1 && Array.IndexOf(operatorList, inputs.Substring(inputs.Length - 1)) > -1)
+        if (inputs.Length == 0 && Array.IndexOf(operatorList, value) > -1)
+        {
+            return true;
+        }
+        else if (Array.IndexOf(operatorList, value) > -1 && Array.IndexOf(operatorList, inputs.Substring(inputs.Length - 1)) > -1)
         {
             return false;
         } else

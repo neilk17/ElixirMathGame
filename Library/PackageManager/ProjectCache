@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637859787629125205
-    m_Hash: 728776223
+      ticks: 637870358459184051
+    m_Hash: 1143937235
   m_LockFileStatus:
     m_FilePath: "C:/Users/32118/OneDrive/\u6587\u6863/GitHub/ElixirMathGame/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637859787762561455
-    m_Hash: 2249468046
+      ticks: 637870358600920288
+    m_Hash: 1907691867
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.collab-proxy@1.15.13
+    - packageId: com.unity.collab-proxy@1.15.15
       testable: 0
       isDirectDependency: 1
-      version: 1.15.13
+      version: 1.15.15
       source: 1
-      resolvedPath: "C:\\Users\\32118\\OneDrive\\\u6587\u6863\\GitHub\\ElixirMathGame\\Library\\PackageCache\\com.unity.collab-proxy@1.15.13"
+      resolvedPath: "C:\\Users\\32118\\OneDrive\\\u6587\u6863\\GitHub\\ElixirMathGame\\Library\\PackageCache\\com.unity.collab-proxy@1.15.15"
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -145,20 +145,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637807003040000000
+      datePublishedTicks: 637828649420000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: 825774911ad2d1440ac844c9be1ae2c9b5dc7966
+        revision: abf10445fb869983dbe4f8f87ec63c58f4cd36e0
         path: 
-    - packageId: com.unity.ide.rider@2.0.7
+    - packageId: com.unity.ide.rider@3.0.13
       testable: 0
       isDirectDependency: 1
-      version: 2.0.7
+      version: 3.0.13
       source: 1
-      resolvedPath: "C:\\Users\\32118\\OneDrive\\\u6587\u6863\\GitHub\\ElixirMathGame\\Library\\PackageCache\\com.unity.ide.rider@2.0.7"
+      resolvedPath: "C:\\Users\\32118\\OneDrive\\\u6587\u6863\\GitHub\\ElixirMathGame\\Library\\PackageCache\\com.unity.ide.rider@3.0.13"
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -238,17 +238,11 @@ m_PackageAssets:
         - 3.0.14
         verified: 2.0.7
       dependencies:
-      - name: com.unity.test-framework
-        version: 1.1.1
-      resolvedDependencies:
-      - name: com.unity.test-framework
-        version: 1.1.31
       - name: com.unity.ext.nunit
         version: 1.0.6
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ext.nunit
+        version: 1.0.6
       keywords: []
       registry:
         id: main
@@ -262,13 +256,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637334461080000000
+      datePublishedTicks: 637837345400000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-        revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
+        revision: 26f15837ac7ebf5038274dcc39e2b79da5fcdc93
         path: 
     - packageId: com.unity.ide.visualstudio@2.0.14
       testable: 0
@@ -701,12 +695,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
         revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
         path: 
-    - packageId: com.unity.timeline@1.4.8
+    - packageId: com.unity.timeline@1.6.4
       testable: 0
       isDirectDependency: 1
-      version: 1.4.8
+      version: 1.6.4
       source: 1
-      resolvedPath: "C:\\Users\\32118\\OneDrive\\\u6587\u6863\\GitHub\\ElixirMathGame\\Library\\PackageCache\\com.unity.timeline@1.4.8"
+      resolvedPath: "C:\\Users\\32118\\OneDrive\\\u6587\u6863\\GitHub\\ElixirMathGame\\Library\\PackageCache\\com.unity.timeline@1.6.4"
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -859,13 +853,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637557616100000000
+      datePublishedTicks: 637789039180000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-        revision: 527e4364e28028f20f04fc51db671eb4bb910a26
+        revision: d7e1eb6805737974459309b7d6e7db58635dd167
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
