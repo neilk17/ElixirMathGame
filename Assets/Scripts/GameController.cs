@@ -65,6 +65,8 @@ public class GameController : MonoBehaviour
 
     //Dictionary<int, List<string>> problemSpace = new Dictionary<int, List<string>>();
     List<string> problemSpace = new List<string>();
+    List<string> problemNum = new List<string>();
+    List<string> problemOp = new List<string>();
 
     string[] operatorList = { "+", "-", "*", "/" };
 
@@ -77,8 +79,8 @@ public class GameController : MonoBehaviour
     float numEffectTime;
     float opEffectTime;
 
-    float numEffectMaximum = 2000f;
-    float opEffectMaximum = 2000f;
+    float numEffectMaximum = 200f;
+    float opEffectMaximum = 200f;
 
     void Start()
     {
@@ -228,6 +230,11 @@ public class GameController : MonoBehaviour
 
         numOfNumbers = numberIndex - 1;
         numOfOperators = operatorIndex - 1;
+    }
+
+    public void StartLevel(List<List<string>> problems)
+    {
+
     }
 
     public void ResetGame()
