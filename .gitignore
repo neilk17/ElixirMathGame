@@ -76,3 +76,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Temporary Scratch file
+/Assets/Scripts/random.cs
+
+# Config files etc
+.DS_Store
+Assets/.DS_Store
+.vscode
