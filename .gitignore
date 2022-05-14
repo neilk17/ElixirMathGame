@@ -79,7 +79,7 @@ crashlytics-build.properties
 
 
 # Temporary Scratch file
-/Assets/Scripts/random.cs
+/Assets/Scripts/random.exe
 
 # Config files etc
 .DS_Store
