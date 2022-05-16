@@ -45,9 +45,16 @@ public class GameController : MonoBehaviour
     public GameObject s16;
     public GameObject s17;
 
+    public GameObject q1;
+    public GameObject q2;
+    public GameObject q3;
+    public GameObject q4;
+    public GameObject q5;
+
     List<GameObject> numbers = new List<GameObject>();
     List<GameObject> operators = new List<GameObject>();
     List<GameObject> slots = new List<GameObject>();
+    List<GameObject> quests = new List<GameObject>();
     string inputs = "";
 
     public Scrollbar energyBar;
@@ -55,6 +62,7 @@ public class GameController : MonoBehaviour
     float barMax;
     public GameObject goalText;
     public GameObject maxText;
+    public Text levelText;
 
     int slotIndex = 0;
     int numOfNumbers = 0;
@@ -62,15 +70,18 @@ public class GameController : MonoBehaviour
 
     public GameObject winUI;
     public GameObject failUI;
+    public GameObject levelUI;
 
     //Dictionary<int, List<string>> problemSpace = new Dictionary<int, List<string>>();
     List<string> problemSpace = new List<string>();
     List<string> problemNum = new List<string>();
     List<string> problemOp = new List<string>();
 
+    int currentProblem = 1;
+
     string[] operatorList = { "+", "-", "*", "/" };
 
-    int answer;
+    int answer = -1;
     int progress = 0;
 
     public GameObject numberEffect;
@@ -81,6 +92,14 @@ public class GameController : MonoBehaviour
 
     float numEffectMaximum = 200f;
     float opEffectMaximum = 200f;
+
+    public ProblemGenerator problemGenerator;
+    List<List<string>> allProblems = new List<List<string>>();
+    int level = 1;
+
+    int questDone = 0;
+
+    bool[] questsStatus = { false, false, false, false, false };
 
     void Start()
     {
@@ -123,8 +142,16 @@ public class GameController : MonoBehaviour
         slots.Add(s16);
         slots.Add(s17);
 
+        quests.Add(q1);
+        quests.Add(q2);
+        quests.Add(q3);
+        quests.Add(q4);
+        quests.Add(q5);
+
+        PauseGame();
+        levelUI.SetActive(true);
+
         TestingProblemSpace();
-        SpawnPotions();
 
     }
 
@@ -134,6 +161,11 @@ public class GameController : MonoBehaviour
         if (progress == answer)
         {
             PauseGame();
+            QuestWin();
+        }
+
+        if (questDone >= 5)
+        {
             Win();
         }
 
@@ -178,6 +210,25 @@ public class GameController : MonoBehaviour
         winUI.SetActive(true);
     }
 
+    void QuestWin()
+    {
+        questsStatus[currentProblem - 1] = true;
+        questDone += 1;
+        quests[currentProblem - 1].SetActive(false);
+        quests[currentProblem - 1].GetComponent<Button>().interactable = false;
+        if (questDone < 5)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                if (!questsStatus[i])
+                {
+                    SetCurrent(i + 1);
+                    break;
+                }
+            }
+        }
+    }
+
     void EndGame()
     {
         numberEffect.SetActive(false);
@@ -199,7 +250,7 @@ public class GameController : MonoBehaviour
         int operatorIndex = 0;
 
         answer = int.Parse(problemSpace[0]);
-        barMax = 1.4f * answer;
+        barMax = 2 * answer;
         goalText.GetComponent<Text>().text = answer.ToString();
         goalBar.value = answer / barMax;
         maxText.GetComponent<Text>().text = "Max: " + barMax.ToString();
@@ -232,16 +283,28 @@ public class GameController : MonoBehaviour
         numOfOperators = operatorIndex - 1;
     }
 
-    public void StartLevel(List<List<string>> problems)
+    public void StartLevel()
     {
+        questDone = 0;
+        currentProblem = 1;
+        levelUI.SetActive(false);
+        winUI.SetActive(false);
+        allProblems = problemGenerator.getProblemSpace(level);
+        SetProblem();
+        SpawnPotions();
+        ResetQuests();
+        EditQuestSlots();
+    }
 
+    public void SetProblem()
+    {
+        problemSpace = allProblems[currentProblem-1];
     }
 
     public void ResetGame()
     {
         progress = 0;
         slotIndex = 0;
-        SpawnPotions();
         foreach (GameObject num in numbers)
         {
             num.SetActive(true);
@@ -312,5 +375,49 @@ public class GameController : MonoBehaviour
         {
             return true;
         }
+    }
+
+    public void SetCurrent(int i)
+    {
+        currentProblem = i;
+        SetProblem();
+        ResetGame();
+        EditQuestSlots();
+    }
+
+    public void SetLevel(int i)
+    {
+        level = i;
+        levelText.text = level.ToString();
+    }
+
+    public void EditQuestSlots()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            if (i+1 == currentProblem)
+            {
+                quests[i].GetComponent<Quest>().CurrentProblem();
+            } else
+            {
+                quests[i].GetComponent<Quest>().NotCurrentProblem();
+            }
+        }
+    }
+
+    public void ResetQuests()
+    {
+        foreach (GameObject button in quests)
+        {
+            button.SetActive(true);
+            button.GetComponent<Button>().interactable = true;
+        }
+    }
+
+    public void LevelInterface()
+    {
+        levelUI.SetActive(true);
+        ResetGame();
+        PauseGame();
     }
 }
