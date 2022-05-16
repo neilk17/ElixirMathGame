@@ -65,7 +65,7 @@ public class GameController : MonoBehaviour
     public Text levelText;
 
     int slotIndex = 0;
-    int numOfNumbers = 0;
+    int numOfNumbers = 1;
     int numOfOperators = 0;
 
     public GameObject winUI;
@@ -107,6 +107,7 @@ public class GameController : MonoBehaviour
     public GameObject resetButton;
     public GameObject quitButton;
 
+    public GameObject audio;
     void Start()
     {
         numEffectTime = numEffectMaximum;
@@ -236,6 +237,7 @@ public class GameController : MonoBehaviour
 
     void QuestWin()
     {
+        audio.GetComponent<Audio>().Win();
         questsStatus[currentProblem - 1] = true;
         questDone += 1;
         progress = 0;
@@ -256,6 +258,8 @@ public class GameController : MonoBehaviour
 
     void EndGame()
     {
+        progress = 0;
+        audio.GetComponent<Audio>().Lose();
         numberEffect.SetActive(false);
         operatorEffect.SetActive(false);
         failUI.SetActive(true);
@@ -367,7 +371,9 @@ public class GameController : MonoBehaviour
     {
         inputs += value;
         slots[inputs.Length - 1].GetComponent<TextMeshProUGUI>().SetText(value);
-        
+
+        audio.GetComponent<Audio>().AddPotion();
+
         if (Array.IndexOf(operatorList, value) == -1)
         {
             evaluate();
