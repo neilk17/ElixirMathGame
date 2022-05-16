@@ -100,6 +100,7 @@ public class GameController : MonoBehaviour
     int questDone = 0;
 
     bool[] questsStatus = { false, false, false, false, false };
+    bool[] levelStatus = { false, false, false, false };
 
     void Start()
     {
@@ -158,14 +159,14 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (progress == answer)
+        if (progress == answer && questDone < 2)
         {
-            PauseGame();
             QuestWin();
         }
 
-        if (questDone >= 5)
+        if (questDone >= 2)
         {
+            PauseGame();
             Win();
         }
 
@@ -205,6 +206,8 @@ public class GameController : MonoBehaviour
 
     void Win()
     {
+        progress = 0;
+        levelStatus[level - 1] = true;
         numberEffect.SetActive(false);
         operatorEffect.SetActive(false);
         winUI.SetActive(true);
@@ -214,6 +217,7 @@ public class GameController : MonoBehaviour
     {
         questsStatus[currentProblem - 1] = true;
         questDone += 1;
+        progress = 0;
         quests[currentProblem - 1].SetActive(false);
         quests[currentProblem - 1].GetComponent<Button>().interactable = false;
         if (questDone < 5)
@@ -291,9 +295,9 @@ public class GameController : MonoBehaviour
         winUI.SetActive(false);
         allProblems = problemGenerator.getProblemSpace(level);
         SetProblem();
-        SpawnPotions();
         ResetQuests();
         EditQuestSlots();
+        ResetGame();
     }
 
     public void SetProblem()
@@ -305,6 +309,7 @@ public class GameController : MonoBehaviour
     {
         progress = 0;
         slotIndex = 0;
+        levelUI.SetActive(false);
         foreach (GameObject num in numbers)
         {
             num.SetActive(true);
@@ -416,8 +421,13 @@ public class GameController : MonoBehaviour
 
     public void LevelInterface()
     {
+        questDone = 0;
         levelUI.SetActive(true);
-        ResetGame();
         PauseGame();
+    }
+
+    public bool[] GetLevelStatus()
+    {
+        return levelStatus;
     }
 }
