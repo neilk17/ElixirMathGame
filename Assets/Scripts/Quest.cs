@@ -9,7 +9,7 @@ public class Quest : MonoBehaviour
 
     void Start()
     {
-        currentNode.SetActive(false);
+        
     }
 
     // Update is called once per frame

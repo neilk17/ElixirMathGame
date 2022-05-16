@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleMenu.unity
     guid: fb62f60e5a6e94149999a505ea74d2f7
   - enabled: 1
-    path: Assets/Scenes/PotionInterface.unity
-    guid: b56bc77b7d4605d469a648dfe9dc04be
-  - enabled: 1
     path: Assets/Scenes/HowToPlay1.unity
     guid: d7ee2294f6ce64e47b8b7ee85565fd5a
+  - enabled: 1
+    path: Assets/Scenes/MathInterface.unity
+    guid: ad866d2985afce74c8267fa45cad9782
   m_configObjects: {}

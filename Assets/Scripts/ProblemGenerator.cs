@@ -7,6 +7,7 @@ public class ProblemGenerator : MonoBehaviour
     // Start is called before the first frame update
     int currentLevel = 1;
     List<List<string>> problemSpace = new List<List<string>>();
+    List<string> singProb = new List<string>();
     void Start()
     {
         
@@ -33,7 +34,7 @@ public class ProblemGenerator : MonoBehaviour
 
     public List<string> getRandProb()
     {
-        List<string> singProb = new List<string>();
+        singProb = new List<string>();
         string operatorString;
         int const1, const2, const3, const4;
 
@@ -51,12 +52,17 @@ public class ProblemGenerator : MonoBehaviour
             max = 100;
         }
 
-        if (currentLevel == 1 || currentLevel == 2)
+        if (currentLevel <= 2)
         {
+            opMin = 1;
             opMax = 3;
-        } else
+        } else if (currentLevel <= 4)
         {
             opMin = 3;
+            opMax = 4;
+        } else
+        {
+            opMin = 1;
             opMax = 4;
         }
 
@@ -64,6 +70,7 @@ public class ProblemGenerator : MonoBehaviour
         // Selecting random answer, constants and operator
         //Random rnd = new Random();
         int ans = Random.Range(min, max);
+        Debug.Log(ans);
         int const5 = Random.Range(min, max);
         int const6 = Random.Range(min, max);
         var operation = Random.Range(opMin, opMax);
@@ -76,30 +83,57 @@ public class ProblemGenerator : MonoBehaviour
             case 1:
                 operatorString = "+";
                 singProb.Add(operatorString);
+                operatorString = "-";
+                singProb.Add(operatorString);
+                if (currentLevel == 5)
+                {
+                    operatorString = "*";
+                    singProb.Add(operatorString);
+                }
                 const1 = Random.Range(1, ans);
                 const2 = ans - const1;
                 const3 = Random.Range(1, ans);
-                while (const3 == const1)
+                if (ans > 4)
                 {
-                    const3 = Random.Range(1, ans);
+                    while (const3 == const1)
+                        {
+                            const3 = Random.Range(1, ans);
+                        }
                 }
                 const4 = ans - const3;
                 break;
             case 2:
                 operatorString = "-";
                 singProb.Add(operatorString);
+                operatorString = "+";
+                singProb.Add(operatorString);
+                if (currentLevel == 5)
+                {
+                    operatorString = "*";
+                    singProb.Add(operatorString);
+                }
                 const1 = Random.Range(1, ans);
                 const2 = ans + const1;
                 const3 = Random.Range(1, ans);
-                while ( const3 == const1)
+                if (ans > 2)
                 {
-                    const3 = Random.Range(2, ans);
+                    while (const3 == const1)
+                    {
+                        const3 = Random.Range(1, ans);
+                    }
                 }
                 const4 = ans + const3;
                 break;
             case 3:
                 operatorString = "*";
                 singProb.Add(operatorString);
+                if (currentLevel == 5)
+                {
+                    operatorString = "-";
+                    singProb.Add(operatorString);
+                    operatorString = "+";
+                    singProb.Add(operatorString);
+                }
                 do
                 {
                     const1 = Random.Range(1, ans);
@@ -127,7 +161,20 @@ public class ProblemGenerator : MonoBehaviour
         singProb.Add(const5.ToString());
         singProb.Add(const6.ToString());
 
+        Shuffle(singProb);
+
         return singProb;
 
+    }
+
+    void Shuffle<T>(List<T> inputList)
+    {
+        for (int i = 1; i < inputList.Count; i++)
+        {
+            T temp = inputList[i];
+            int rand = Random.Range(i, inputList.Count);
+            inputList[i] = inputList[rand];
+            inputList[rand] = temp;
+        }
     }
 }

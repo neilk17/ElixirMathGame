@@ -100,7 +100,12 @@ public class GameController : MonoBehaviour
     int questDone = 0;
 
     bool[] questsStatus = { false, false, false, false, false };
-    bool[] levelStatus = { false, false, false, false };
+    bool[] levelStatus = { true, true, true, true, true };
+
+    public GameObject potionObject;
+    public GameObject questObject;
+    public GameObject resetButton;
+    public GameObject quitButton;
 
     void Start()
     {
@@ -159,22 +164,24 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (progress == answer && questDone < 2)
+        if (progress == answer && questDone < 5)
         {
             QuestWin();
         }
-
-        if (questDone >= 2)
-        {
-            PauseGame();
-            Win();
-        }
-
+        
         if (progress < 0 || progress > barMax || numOfNumbers <= 0)
         {
             PauseGame();
             EndGame();
         }
+
+        if (questDone >= 5)
+        {
+            PauseGame();
+            Win();
+        }
+
+        
         
         if (numEffectTime < numEffectMaximum)
         {
@@ -197,20 +204,34 @@ public class GameController : MonoBehaviour
     void PauseGame()
     {
         Time.timeScale = 0f;
+        potionObject.SetActive(false);
+        questObject.SetActive(false);
+        resetButton.SetActive(false);
+        quitButton.SetActive(false);
     }
 
     void ResumeGame()
     {
         Time.timeScale = 1f;
+        potionObject.SetActive(true);
+        questObject.SetActive(true);
+        resetButton.SetActive(true);
+        quitButton.SetActive(true);
     }
 
     void Win()
     {
         progress = 0;
         levelStatus[level - 1] = true;
-        numberEffect.SetActive(false);
-        operatorEffect.SetActive(false);
-        winUI.SetActive(true);
+        if (level == 5)
+        {
+            StartLevel();
+        } else
+        {
+            numberEffect.SetActive(false);
+            operatorEffect.SetActive(false);
+            winUI.SetActive(true);
+        }
     }
 
     void QuestWin()
@@ -294,6 +315,7 @@ public class GameController : MonoBehaviour
         levelUI.SetActive(false);
         winUI.SetActive(false);
         allProblems = problemGenerator.getProblemSpace(level);
+        ResumeGame();
         SetProblem();
         ResetQuests();
         EditQuestSlots();
