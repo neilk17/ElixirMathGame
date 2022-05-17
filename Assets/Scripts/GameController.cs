@@ -99,8 +99,8 @@ public class GameController : MonoBehaviour
 
     int questDone = 0;
 
-    bool[] questsStatus = { false, false, false, false, false };
-    bool[] levelStatus = { true, true, true, true, true };
+    List<bool> questsStatus = new List<bool>() { false, false, false, false, false };
+    List<bool> levelStatus = new List<bool>() { true, true, true, true, true };
 
     public GameObject potionObject;
     public GameObject questObject;
@@ -165,7 +165,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (progress == answer && questDone < 5)
+        if (progress == answer)
         {
             QuestWin();
         }
@@ -243,15 +243,17 @@ public class GameController : MonoBehaviour
         progress = 0;
         quests[currentProblem - 1].SetActive(false);
         quests[currentProblem - 1].GetComponent<Button>().interactable = false;
-        if (questDone < 5)
+        Debug.Log(questsStatus[0]);
+        Debug.Log(questsStatus[1]);
+        Debug.Log(questsStatus[2]);
+        Debug.Log(questsStatus[3]);
+        Debug.Log(questsStatus[4]);
+        for (int i = 0; i < 5; i++)
         {
-            for (int i = 0; i < 5; i++)
+            if (!questsStatus[i])
             {
-                if (!questsStatus[i])
-                {
-                    SetCurrent(i + 1);
-                    break;
-                }
+                SetCurrent(i + 1);
+                break;
             }
         }
     }
@@ -445,6 +447,7 @@ public class GameController : MonoBehaviour
             button.SetActive(true);
             button.GetComponent<Button>().interactable = true;
         }
+        questsStatus = new List<bool>() { false, false, false, false, false };
     }
 
     public void LevelInterface()
@@ -454,7 +457,7 @@ public class GameController : MonoBehaviour
         PauseGame();
     }
 
-    public bool[] GetLevelStatus()
+    public List<bool> GetLevelStatus()
     {
         return levelStatus;
     }

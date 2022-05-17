@@ -8,7 +8,7 @@ public class LevelButton : MonoBehaviour
     // Start is called before the first frame update
     public int level;
     public GameObject controller;
-    bool[] status;
+    List<bool> status = new List<bool>();
     void Start()
     {
         

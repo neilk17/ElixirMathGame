@@ -70,9 +70,16 @@ public class ProblemGenerator : MonoBehaviour
         // Selecting random answer, constants and operator
         //Random rnd = new Random();
         int ans = Random.Range(min, max);
-        Debug.Log(ans);
         int const5 = Random.Range(min, max);
+        while (const5 == ans)
+        {
+            const5 = Random.Range(min, max);
+        }
         int const6 = Random.Range(min, max);
+        while (const6 == ans)
+        {
+            const6 = Random.Range(min, max);
+        }
         var operation = Random.Range(opMin, opMax);
         // var operation = 3;
 
