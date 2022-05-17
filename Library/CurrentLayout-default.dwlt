@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 292}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 99
+  controlID: 118
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 507, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 16
+  controlID: 117
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 780.8
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 17
+  controlID: 37
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -409,22 +409,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Window
+    - Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Window
+  - Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\bhigg\BetaVersion\ElixirMathGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 319}
-    m_SelectedIDs: c6590000
-    m_LastClickedID: 22982
-    m_ExpandedIDs: 00000000c03e0000c23e0000c43e0000c63e0000c83e0000ca3e0000cc3e0000ce3e0000d03e0000da3e0000023f00009a590000a6590000ce59000000ca9a3b
+    scrollPos: {x: 0, y: 218.49875}
+    m_SelectedIDs: 163f0000
+    m_LastClickedID: 16150
+    m_ExpandedIDs: 00000000023f0000043f0000063f0000083f00000a3f00000c3f00000e3f0000103f0000143f0000163f0000183f00001a3f0000383f00003e3f0000503f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -452,7 +452,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c03e0000c23e0000c43e0000c63e0000c83e0000ca3e0000cc3e0000ce3e0000d03e0000
+    m_ExpandedIDs: 00000000023f0000043f0000063f0000083f00000a3f00000c3f00000e3f0000103f0000123f0000143f0000163f0000183f00001a3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,7 +480,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000064300000f2090000fc090000120a0000160a0000240a0000300a0000d83c0000ea3c0000624000006c47000032b5000000000000
+    m_ExpandedInstanceIDs: c623000064300000f2090000fc090000120a0000160a0000240a0000300a0000d83c0000ea3c0000624000006c47000032b5000000000000825a00008a5a00008e5a0000945a0000985a0000a05a0000a45a0000a65a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -574,10 +574,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 45.600006}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 10e3ffff38fbfffff23d0000
+      m_ExpandedIDs: 
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -1.9419867, y: -0.36038598, z: 134.46193}
     speed: 2
-    m_Value: {x: -1.9336739, y: -0.36149728, z: 134.36871}
+    m_Value: {x: -1.9419867, y: -0.36038598, z: 134.46193}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 5.049274
     speed: 2
-    m_Value: 5.04549
+    m_Value: 5.049274
   m_Ortho:
     m_Target: 1
     speed: 2

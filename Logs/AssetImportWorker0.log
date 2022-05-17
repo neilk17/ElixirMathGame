@@ -1,0 +1,739 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.32f1 (12f8b0834f07) revision 1243312'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'en' Physical Memory: 16190 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2020.3.32f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/bhigg/BetaVersion/ElixirMathGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52557
+Successfully changed project path to: C:/Users/bhigg/BetaVersion/ElixirMathGame
+C:/Users/bhigg/BetaVersion/ElixirMathGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 170.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.32f1 (12f8b0834f07)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.32f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bhigg/BetaVersion/ElixirMathGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA Quadro P500 (ID=0x1d33)
+    Vendor:   
+    VRAM:     1984 MB
+    Driver:   30.0.14.7234
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2020.3.32f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity 2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004646 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 68.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Domain Reload Profiling:
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (575ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (222ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005664 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bhigg\BetaVersion\ElixirMathGame\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.258 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1259ms)
+		BeginReloadAssembly (206ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (970ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (348ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1547 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.2 MB.
+System memory in use after: 77.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1994.
+Total: 3.427100 ms (FindLiveObjects: 0.152600 ms CreateObjectMapping: 0.060700 ms MarkObjects: 3.129000 ms  DeleteObjects: 0.084000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Decoration/Hanger01_a01.prefab
+  artifactKey: Guid(bd99fd9ce0a4d7146a8ea6912f781027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Decoration/Hanger01_a01.prefab using Guid(bd99fd9ce0a4d7146a8ea6912f781027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9980788100daa5c4fdad7c51f03f0171') in 0.157491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Chimney/Chimney01.prefab
+  artifactKey: Guid(8ddcb62f6c2df7e478384fd8781918eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Chimney/Chimney01.prefab using Guid(8ddcb62f6c2df7e478384fd8781918eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af79646adadeb52d767989478d2425f7') in 0.025646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Decoration/Vane01_a01.prefab
+  artifactKey: Guid(e8623453a3709ad429e35b16a63634ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Decoration/Vane01_a01.prefab using Guid(e8623453a3709ad429e35b16a63634ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd616c76e9e45022eb0a57344fedf9abd') in 0.022801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.168630 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Building22/Building22_e02.prefab
+  artifactKey: Guid(1847918c7f52b0f4cb5fe7fbb59b2c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Main Structures/Building22/Building22_e02.prefab using Guid(1847918c7f52b0f4cb5fe7fbb59b2c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51eebe28286b006424a50fa995f2ec9') in 0.079838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.051555 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Farm/Trough01_a01.prefab
+  artifactKey: Guid(8de2689dfe865154899af6901203bff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Farm/Trough01_a01.prefab using Guid(8de2689dfe865154899af6901203bff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9023210c5c1773393e55ac647506339b') in 0.067408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.319356 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Food/Wine03_a01.prefab
+  artifactKey: Guid(4e7dc3de309b0734c8cc6366a6356f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Food/Wine03_a01.prefab using Guid(4e7dc3de309b0734c8cc6366a6356f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4863625155fa82208d0f0c0cefec1097') in 0.083973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.498626 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Furniture/Chair01_a01.prefab
+  artifactKey: Guid(83a3509435aa05244a54ca0ab2a578b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Furniture/Chair01_a01.prefab using Guid(83a3509435aa05244a54ca0ab2a578b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e8db4b16eeb25ced4bf2aa2e208802') in 0.069088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000815 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Furniture/Table01_a02.prefab
+  artifactKey: Guid(95cfd78d41b57b847a8d5a80df5d6edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Furniture/Table01_a02.prefab using Guid(95cfd78d41b57b847a8d5a80df5d6edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f61bee474498c0400ecebb1d08af06') in 0.077999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.626062 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Lighting/Light02_a04.prefab
+  artifactKey: Guid(6001da597a12e8d45bcda50edd56772e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Props/Lighting/Light02_a04.prefab using Guid(6001da597a12e8d45bcda50edd56772e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6496cb2b6bc5a4c4788bae936fcf0c') in 0.073181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.033225 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Vegetation/Vine01_a02.prefab
+  artifactKey: Guid(8ea9dc37f9ec7584cbbe5fe654ca0878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Vegetation/Vine01_a02.prefab using Guid(8ea9dc37f9ec7584cbbe5fe654ca0878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c9a8f7433eec717355e9385854027c') in 0.079936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000776 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Vegetation/Vine01_b02.prefab
+  artifactKey: Guid(57e05925a943368449d724762e92632e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Vegetation/Vine01_b02.prefab using Guid(57e05925a943368449d724762e92632e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1200ad02e21735d871bd264e285dc6') in 0.074546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 222.986637 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_a.prefab
+  artifactKey: Guid(a9d75ae70f113fe4daa46ba82c5bbe47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_a.prefab using Guid(a9d75ae70f113fe4daa46ba82c5bbe47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0c7e831dcbf009e5bceb799235a5e5') in 0.129815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_b.prefab
+  artifactKey: Guid(9c899610785b0c344a60a99f81a7b599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_b.prefab using Guid(9c899610785b0c344a60a99f81a7b599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51aa6f9e0f589b4011447ea3c946be1') in 0.053003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_c.prefab
+  artifactKey: Guid(8c6bba77413370b469adb3b6233d098e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_c.prefab using Guid(8c6bba77413370b469adb3b6233d098e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd506bd389e5524ccfdf206c39228765a') in 0.048242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_d.prefab
+  artifactKey: Guid(28b228c79a309474b9c2034310e32a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Perfabs/Building Combination/BuildingAT07_d.prefab using Guid(28b228c79a309474b9c2034310e32a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e2de38e5d8611f8f13576e394cfb07') in 0.055082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.340390 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Barrel03_a06.FBX
+  artifactKey: Guid(2714a9ab83203d643b82c645c8bbb187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Barrel03_a06.FBX using Guid(2714a9ab83203d643b82c645c8bbb187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '515946f8633166efbda073a6fa706bc9') in 0.147833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Flower02_b01.FBX
+  artifactKey: Guid(c25fea99ca248ba4899a962103d29517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Flower02_b01.FBX using Guid(c25fea99ca248ba4899a962103d29517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffb1b05b43cbd68477b4b56836ece30') in 0.060098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000501 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building16_d01.FBX
+  artifactKey: Guid(e746476fc97f2264ea23e6342026b8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building16_d01.FBX using Guid(e746476fc97f2264ea23e6342026b8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f3a396b1c98708cfec9c66f66e87fd') in 0.052398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000660 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Table01_a02.FBX
+  artifactKey: Guid(4eaccc8f6fca66547885cd1682fa152a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Table01_a02.FBX using Guid(4eaccc8f6fca66547885cd1682fa152a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f555bfbaec42a570d697da15e5757bc') in 0.059222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Window06_b04.FBX
+  artifactKey: Guid(afacbbb9a0092474f94b517598d63b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Window06_b04.FBX using Guid(afacbbb9a0092474f94b517598d63b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e544f72b2658b959a54a5f72673cb365') in 0.055650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Shop_sign01_b05.FBX
+  artifactKey: Guid(e28431d4e0f3799449f540afa1153f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Shop_sign01_b05.FBX using Guid(e28431d4e0f3799449f540afa1153f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a48b25a042c579dca030185df4cb611') in 0.053447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000612 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Tool03_b01.FBX
+  artifactKey: Guid(42a63568b250039459fcf16df3711d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Tool03_b01.FBX using Guid(42a63568b250039459fcf16df3711d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22bbd1a2e42b5b86a41a5509b8616f4') in 0.041371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000943 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Flowerpot02_a01.FBX
+  artifactKey: Guid(da7bb537515e54b4f9636bd1604df716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Flowerpot02_a01.FBX using Guid(da7bb537515e54b4f9636bd1604df716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f37cededb282f79bc7cf399e3c1d50a') in 0.059573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Light02_a04.FBX
+  artifactKey: Guid(613c0f7295d0436458c9764822b8675b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Light02_a04.FBX using Guid(613c0f7295d0436458c9764822b8675b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52c9ffcd2f00c23cf1091bda7e8db373') in 0.044484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wine01_b01.FBX
+  artifactKey: Guid(f43d9359f6d4e8e49a985a5e85686e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wine01_b01.FBX using Guid(f43d9359f6d4e8e49a985a5e85686e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd232d89d71c7f6cf1a4e2d16fb073b') in 0.044061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building01.FBX
+  artifactKey: Guid(f6401ca38e3d650459efce468a43a74b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building01.FBX using Guid(f6401ca38e3d650459efce468a43a74b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a974d077202f06c1481c9f4e96c8b1') in 0.039640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000641 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Chimney01.FBX
+  artifactKey: Guid(122681202d90691448161e6b31d7af51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Chimney01.FBX using Guid(122681202d90691448161e6b31d7af51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01034ba5c97d71094af5ebff81f49f0') in 0.041311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building22_e02.FBX
+  artifactKey: Guid(aafec1adce75d1241aa389b089a93cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building22_e02.FBX using Guid(aafec1adce75d1241aa389b089a93cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a3b45185ddae428a0e90bece2e044f') in 0.040804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Goods07_a01.FBX
+  artifactKey: Guid(9c128581060d70c4081a631852d76b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Goods07_a01.FBX using Guid(9c128581060d70c4081a631852d76b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846d72d997abb525b35ab07170a9f290') in 0.040025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wine02_d01.FBX
+  artifactKey: Guid(6a86b90b3dd6640409858823fe1033c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wine02_d01.FBX using Guid(6a86b90b3dd6640409858823fe1033c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49441cc012eb98a9433d7234e409575') in 0.043414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Shop_sign08_c01.FBX
+  artifactKey: Guid(9748d765757e3f94e9b89c72c3fd3489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Shop_sign08_c01.FBX using Guid(9748d765757e3f94e9b89c72c3fd3489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d35602a318a40241d0abd55203df142') in 0.044864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Trough01_a01.FBX
+  artifactKey: Guid(537d7b7874bfaaa4a8b681e3fc5cc19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Trough01_a01.FBX using Guid(537d7b7874bfaaa4a8b681e3fc5cc19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc84200adf52086f7c3912773c4547fc') in 0.043772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Vine01_a02.FBX
+  artifactKey: Guid(47cbc1989066d3241b69d4a22e26f7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Vine01_a02.FBX using Guid(47cbc1989066d3241b69d4a22e26f7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3c86dfb65c2fccf0e7e59cddbb729ac') in 0.041458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building01_d02.FBX
+  artifactKey: Guid(c5ab1c42c3168174e8ccbeda8c96ff54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Building01_d02.FBX using Guid(c5ab1c42c3168174e8ccbeda8c96ff54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129605c2dbe89c69ad9b0e9e2f725298') in 0.042908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wood02_a04.FBX
+  artifactKey: Guid(2b0c2618ef57a6447a3ecf7ba6b2f331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wood02_a04.FBX using Guid(2b0c2618ef57a6447a3ecf7ba6b2f331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c76aad5f1dbb50f8d167d3b1840b6fe') in 0.044844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Chair01_a01.FBX
+  artifactKey: Guid(184161089ff79ba4e801ddc4b7ca8abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Chair01_a01.FBX using Guid(184161089ff79ba4e801ddc4b7ca8abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08422ded18ff4ec943eb27bc283db7a5') in 0.046196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Railing07_a01.FBX
+  artifactKey: Guid(92e98eff67cff184b876a21bfcf18845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Railing07_a01.FBX using Guid(92e98eff67cff184b876a21bfcf18845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986dcc07c70091b9ffdbd5ef97dd9df7') in 0.044750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Window01_b01.FBX
+  artifactKey: Guid(9ffe8f09e79e723448ef2fe03e27676d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Window01_b01.FBX using Guid(9ffe8f09e79e723448ef2fe03e27676d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639eb1672f3099a85d1489eeb4bb008b') in 0.043136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Vane01_a01.FBX
+  artifactKey: Guid(8b95816d411381c4b98f255228e8f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Vane01_a01.FBX using Guid(8b95816d411381c4b98f255228e8f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '492de47a9d1f575e426b37ace02dc4eb') in 0.043162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000525 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Door14.FBX
+  artifactKey: Guid(d11040a83f58e9a4ca620798e7b3e7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Door14.FBX using Guid(d11040a83f58e9a4ca620798e7b3e7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223205e9c7c95044ae01c96f0ecb5b55') in 0.045621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000775 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Door16_d02.FBX
+  artifactKey: Guid(0611216a8bee93f44b80ba0e4c97eb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Door16_d02.FBX using Guid(0611216a8bee93f44b80ba0e4c97eb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9dbe303299592e42fde7d6786ea1e5') in 0.045587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wood07_a02.FBX
+  artifactKey: Guid(75a83a2612cb8d54683aa86e2c2a42c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Wood07_a02.FBX using Guid(75a83a2612cb8d54683aa86e2c2a42c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f4bad5a3cf30d34fb445d191e28798') in 0.047494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Pot05_g01.FBX
+  artifactKey: Guid(18ad7a8a668e58e4382731dda3f934ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Pot05_g01.FBX using Guid(18ad7a8a668e58e4382731dda3f934ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa37fe0a37b056a99985d4b440401c50') in 0.044835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Rope01_a02.FBX
+  artifactKey: Guid(1d87a6bf860e4194092e0a5206d119f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Rope01_a02.FBX using Guid(1d87a6bf860e4194092e0a5206d119f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762edbed0a1b7e68c7c0dea47412e86e') in 0.044508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Vine01_b02.FBX
+  artifactKey: Guid(2e772e151f5c93847814efdaacf1339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Vine01_b02.FBX using Guid(2e772e151f5c93847814efdaacf1339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ac81f9448dedce000edd4d79f5695a') in 0.041196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Flowerpot01_d01.FBX
+  artifactKey: Guid(b62f9047e18f6f749800cb32fe180a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Flowerpot01_d01.FBX using Guid(b62f9047e18f6f749800cb32fe180a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a01408d735b16cfa905fdd3d565a2cb') in 0.045520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Hanger01_a01.FBX
+  artifactKey: Guid(02a49b3b92e28f34f9f47a39949e318f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Hanger01_a01.FBX using Guid(02a49b3b92e28f34f9f47a39949e318f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567674ee35b93f1868292dca1aadd04f') in 0.040766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 577.340483 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision
+  artifactKey: Guid(a03fd21f2f6129d4793cd3199488515b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision using Guid(a03fd21f2f6129d4793cd3199488515b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18026dc007c10634b320de76e3ae5ecb') in 0.035148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004623 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Building01_col.FBX
+  artifactKey: Guid(4c7218f5d553d3c42974b9f360d2849e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Building01_col.FBX using Guid(4c7218f5d553d3c42974b9f360d2849e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbe3b064a649ae73fca05ec06b846d8') in 0.105606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000839 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Light02_a04_col.FBX
+  artifactKey: Guid(73288ad776a9a9348ba6e40a7e3e473c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Light02_a04_col.FBX using Guid(73288ad776a9a9348ba6e40a7e3e473c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad455ba13a6cddb00862cb05db704ec') in 0.077827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000957 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Building16_col.FBX
+  artifactKey: Guid(2358ddb185db0ee45bfab32de4333cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Building16_col.FBX using Guid(2358ddb185db0ee45bfab32de4333cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32b21af6b6350c23376b667a514bae7') in 0.086782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000843 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Wood02_a04_col.FBX
+  artifactKey: Guid(176ad187f9a116b4cb3eeb6f306d3952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Wood02_a04_col.FBX using Guid(176ad187f9a116b4cb3eeb6f306d3952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b11367eca4d9a0b7f1599c88c18d61') in 0.081655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000845 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Door16_col.FBX
+  artifactKey: Guid(00cfd7cad04939d41a652d39dc4534c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Door16_col.FBX using Guid(00cfd7cad04939d41a652d39dc4534c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bd42cc8cd15e7101cad517fb941b30') in 0.078261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001015 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Building22_e02_col.FBX
+  artifactKey: Guid(86ccd32c8e8b0174f84495484c1b85e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Meshes/Collision/Building22_e02_col.FBX using Guid(86ccd32c8e8b0174f84495484c1b85e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edb00ca05031badc75ce8b0ff59786a') in 0.084484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 271.308773 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Back_Tex.png
+  artifactKey: Guid(c1a256d74c3f1704db8572ef683c43cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Back_Tex.png using Guid(c1a256d74c3f1704db8572ef683c43cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227a0862b23055460aae06d373d024b5') in 0.110948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000845 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Up_Tex.png
+  artifactKey: Guid(f876776fe5b46564a9e42e90b609d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Up_Tex.png using Guid(f876776fe5b46564a9e42e90b609d367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff266b89f270eb291866b308fa7e61da') in 0.080073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000968 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Front_Tex.png
+  artifactKey: Guid(7a3837d7139c94344972fa9fc9a474e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Front_Tex.png using Guid(7a3837d7139c94344972fa9fc9a474e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011eb134b7a2729b4932f041108ffe16') in 0.066748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000989 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Left_Tex.png
+  artifactKey: Guid(b4bbff34d946d3d4b948509b9085ba95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Left_Tex.png using Guid(b4bbff34d946d3d4b948509b9085ba95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4256b12b3b572ed64ca54a80161d3a') in 0.062749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000762 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Down_Tex.png
+  artifactKey: Guid(9c05f2ab86441c4478441ff554428b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Down_Tex.png using Guid(9c05f2ab86441c4478441ff554428b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05cd90cf3bef816725bea46951fb14b4') in 0.071564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000770 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Right_Tex.png
+  artifactKey: Guid(18089b724a86a61418bb95b958d57e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_1/Right_Tex.png using Guid(18089b724a86a61418bb95b958d57e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9bbee5651465ccc2c06327183693d76') in 0.041979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.463987 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Back_Tex.png
+  artifactKey: Guid(ccf6463c9748e3641969f0675ca31557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Back_Tex.png using Guid(ccf6463c9748e3641969f0675ca31557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be6a44f862cabde3fc443ffe3b2abe3') in 0.072606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000983 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Right_Tex.png
+  artifactKey: Guid(19b2b1a141020bd43b39b581f1c66dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Right_Tex.png using Guid(19b2b1a141020bd43b39b581f1c66dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96bdd132adf271a811d5e0754587e22b') in 0.076354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000942 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Down_Tex.png
+  artifactKey: Guid(60256e2f8227cee4ab28d230b5abbc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Down_Tex.png using Guid(60256e2f8227cee4ab28d230b5abbc35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e6ff32158268edb5a96ffb9b7784630') in 0.072237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000975 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Front_Tex.png
+  artifactKey: Guid(73792e4787969994bb4c97e418591c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Front_Tex.png using Guid(73792e4787969994bb4c97e418591c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd057a60123cbc73677c7aad243b9e1') in 0.060377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001020 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Up_Tex.png
+  artifactKey: Guid(ce2c5305fe145864f9a6d953f6d091e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Up_Tex.png using Guid(ce2c5305fe145864f9a6d953f6d091e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3d2ed7e7c55efe888faa51025613ee') in 0.069020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000924 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Left_Tex.png
+  artifactKey: Guid(5d49dc08e367f8d469f95ed9b795a73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_2/Left_Tex.png using Guid(5d49dc08e367f8d469f95ed9b795a73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd7ec16aa3206619b39d0aeea15964b') in 0.060930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.329059 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Back_Tex.png
+  artifactKey: Guid(e88d0da9f62c13d40904c838a6dd00b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Back_Tex.png using Guid(e88d0da9f62c13d40904c838a6dd00b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6b8b27477635997f9a624954abd6c1') in 0.035938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Right_Tex.png
+  artifactKey: Guid(9cec472ff7443044ea6ec18c82bd0923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Right_Tex.png using Guid(9cec472ff7443044ea6ec18c82bd0923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f747eaed38d52e7970839dca06c8e3b') in 0.039791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000712 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Front_Tex.png
+  artifactKey: Guid(ff763b7d888f8dc449d241f19294106b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Front_Tex.png using Guid(ff763b7d888f8dc449d241f19294106b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58698dbd3855c3b5b95052e00b2f73ff') in 0.021969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Down_Tex.png
+  artifactKey: Guid(f5c10e8155f7ef2429f4ecfed1e81a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Down_Tex.png using Guid(f5c10e8155f7ef2429f4ecfed1e81a7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1dc2d43bbce9ff387ac337005886661') in 0.033831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Left_Tex.png
+  artifactKey: Guid(36b1e02dd68d74c40ab47d997320867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Left_Tex.png using Guid(36b1e02dd68d74c40ab47d997320867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715a89cbbbcf95552aae0cafbee27bce') in 0.025513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Up_Tex.png
+  artifactKey: Guid(43c6d7f45c9cb0247a1eb2a589bfa4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_3/Up_Tex.png using Guid(43c6d7f45c9cb0247a1eb2a589bfa4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c26d807692bf38d31ff618593836e11') in 0.026867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.433454 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Back_Tex.png
+  artifactKey: Guid(4ce002b4dccc29342862558ba9ea05d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Back_Tex.png using Guid(4ce002b4dccc29342862558ba9ea05d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6d075c3900226f4f80b9a16878e95f') in 0.057939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000858 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Left_Tex.png
+  artifactKey: Guid(54c85a2234eacb242b4ee561ac995f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Left_Tex.png using Guid(54c85a2234eacb242b4ee561ac995f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea587db6743e8d77c99ced1cbe6c7579') in 0.058324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000917 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Right_Tex.png
+  artifactKey: Guid(dab48f6609da7be4aae65265198dde18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Right_Tex.png using Guid(dab48f6609da7be4aae65265198dde18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b813b546a4e6d0a0f9004d9ce38fd214') in 0.059054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000879 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Front_Tex.png
+  artifactKey: Guid(71de4bd32f3aa0d43b999affb1c3b38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Front_Tex.png using Guid(71de4bd32f3aa0d43b999affb1c3b38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0b0918f1c54d0178ef392cf8b1ada7') in 0.058051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000946 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Down_Tex.png
+  artifactKey: Guid(98078ce5a530b404ebfcf21998603672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Down_Tex.png using Guid(98078ce5a530b404ebfcf21998603672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bdd96cce72d6e8551103977f8f91f2e') in 0.069587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000938 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Up_Tex.png
+  artifactKey: Guid(a8416f33edf509944a163c8fe94d24fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_4/Up_Tex.png using Guid(a8416f33edf509944a163c8fe94d24fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f350aba9da55766922b41ad4efc0439') in 0.060541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.216726 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Back_Tex.png
+  artifactKey: Guid(faa8113ee0b82404d87c52547a10cc91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Back_Tex.png using Guid(faa8113ee0b82404d87c52547a10cc91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6a34663da4e525bded4908f8c80600') in 0.077541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000890 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Right_Tex.png
+  artifactKey: Guid(aca887f2ebec15e47a0162f8ce72295f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Right_Tex.png using Guid(aca887f2ebec15e47a0162f8ce72295f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acae9e9a57936fe96a28c62c7606e08f') in 0.089174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001126 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Up_Tex.png
+  artifactKey: Guid(d5c5dafb97f2e2e4aa4084c0857fc3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Up_Tex.png using Guid(d5c5dafb97f2e2e4aa4084c0857fc3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09187b32b54d25d485410a73278fca15') in 0.076915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000889 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Front_Tex.png
+  artifactKey: Guid(0ff3184f83c61694f88e71685b7681cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Front_Tex.png using Guid(0ff3184f83c61694f88e71685b7681cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128a62635c27b751c1e16864d5d3cde0') in 0.061752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001048 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Left_Tex.png
+  artifactKey: Guid(521ba01b98a34334b97fe8fb50582cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Left_Tex.png using Guid(521ba01b98a34334b97fe8fb50582cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae0a6100a082f8571eab720e4cbc1c9') in 0.061160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000855 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Down_Tex.png
+  artifactKey: Guid(a890e4d5bb98bbc4f9a16e0db8faa8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_5/Down_Tex.png using Guid(a890e4d5bb98bbc4f9a16e0db8faa8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6259f582230bc3803e100d4f9d4f743') in 0.068089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.114135 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Back_Tex.png
+  artifactKey: Guid(db4f6f83698d9e04db6332fd79383640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Back_Tex.png using Guid(db4f6f83698d9e04db6332fd79383640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3dc6fd4236abf44558bfe881f9eafe') in 0.059126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000914 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Left_Tex.png
+  artifactKey: Guid(a165eace3170c4a4486cc07a2cab1223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Left_Tex.png using Guid(a165eace3170c4a4486cc07a2cab1223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250303d7815d459d5487ccf9e5de41fc') in 0.074806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000953 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Up_Tex.png
+  artifactKey: Guid(c57633b2b63718e43859f971f00da9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Up_Tex.png using Guid(c57633b2b63718e43859f971f00da9ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4732cf33dcab374eac502fc392f4f409') in 0.075412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000838 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Right_Tex.png
+  artifactKey: Guid(e6c1cd7db73de0640b5195271e2c731e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Right_Tex.png using Guid(e6c1cd7db73de0640b5195271e2c731e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b72c531a55894ade679e70be70ac907') in 0.073247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000874 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Down_Tex.png
+  artifactKey: Guid(11a7be3583abbfb4887ddf650e44e7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Down_Tex.png using Guid(11a7be3583abbfb4887ddf650e44e7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b50d94a85b613c6104a9d725c109b8') in 0.061370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001555 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Front_Tex.png
+  artifactKey: Guid(5fbca3066806bba409147e4ccacbdd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_6/Front_Tex.png using Guid(5fbca3066806bba409147e4ccacbdd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4249e89b0628621aaf7697c011e4a5a4') in 0.059334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.403843 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Back_Tex.png
+  artifactKey: Guid(ddd5569091b31ff419682dbdca61c618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Back_Tex.png using Guid(ddd5569091b31ff419682dbdca61c618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af816a2ec6f38ab78717d884c11c1b04') in 0.066080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000922 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Left_Tex.png
+  artifactKey: Guid(202d8a1b5b39a8042bfa416fed86facc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Left_Tex.png using Guid(202d8a1b5b39a8042bfa416fed86facc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5003ad4263fcbde34dd940208c0b6a9') in 0.111796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003285 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Front_Tex.png
+  artifactKey: Guid(b81d91965908a214d848b719c7a9d1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Front_Tex.png using Guid(b81d91965908a214d848b719c7a9d1ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1d162f1910f66c9f1725b31de1554a') in 0.052054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Up_Tex.png
+  artifactKey: Guid(3ae5e39d7931ec74f8e9f1781aaf1e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Up_Tex.png using Guid(3ae5e39d7931ec74f8e9f1781aaf1e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f81f925d9c1f639d326c01e78caa08') in 0.042206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Right_Tex.png
+  artifactKey: Guid(dd21d60bd4eed1447a1dc3b3a4e684b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Right_Tex.png using Guid(dd21d60bd4eed1447a1dc3b3a4e684b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26006c40bc7cfb0668e468d7882efdc4') in 0.039132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Down_Tex.png
+  artifactKey: Guid(8f99e93e2d44b91459b2c18f4ea20396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Textures/Skybox_7/Down_Tex.png using Guid(8f99e93e2d44b91459b2c18f4ea20396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431275bf803372a51cd2c8d000ff3935') in 0.025905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.952907 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Demo/DemoScene.unity
+  artifactKey: Guid(47cd513b8c4397e4ca272a1ff269d933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Demo/DemoScene.unity using Guid(47cd513b8c4397e4ca272a1ff269d933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8087b7cd1a9099db2963ee9b732359ad') in 0.032238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.867483 seconds.
+  path: Assets/ImportedAssets/ColorSkies/Demo/Scripts
+  artifactKey: Guid(7080738d246006747964bbce844203b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/ColorSkies/Demo/Scripts using Guid(7080738d246006747964bbce844203b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66b1b6eb0e8c755f69fd27692cb1abea') in 0.025312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.278509 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Demo
+  artifactKey: Guid(5135d7ebfc9b75e4495c3914795ed723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Demo using Guid(5135d7ebfc9b75e4495c3914795ed723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46cf0d1a79d0af4b785632f1ff3fcca1') in 0.034175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.861274 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Demo/New Terrain.asset
+  artifactKey: Guid(b4e97254e971d66408c6c046dbb7d709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Demo/New Terrain.asset using Guid(b4e97254e971d66408c6c046dbb7d709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffbcd96baf398675af77ffdfdca8a61') in 0.156357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Demo/Read me02.jpg
+  artifactKey: Guid(4271f12254a323d49b392c4bfdfa977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Fantasy_Kingdom_Pack_Lite/Demo/Read me02.jpg using Guid(4271f12254a323d49b392c4bfdfa977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08225d3c766a10d690edfb4eb1d2e6e') in 0.044495 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
