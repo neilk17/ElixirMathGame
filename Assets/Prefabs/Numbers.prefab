@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1529846681483794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 1}
+  m_LocalScale: {x: 35, y: 35, z: 1}
   m_Children:
   - {fileID: 4326505887704396}
   - {fileID: 2146446661070336761}
@@ -81,13 +81,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.2989483, y: 0.7052617}
-      - {x: 0.5305177, y: 0.69304216}
-      - {x: 0.2771577, y: 1.2241362}
-      - {x: -0.318695, y: 1.2084558}
-      - {x: -0.39377925, y: -1.1060889}
-      - {x: 0.7454153, y: -1.1667154}
-      - {x: 1.8362088, y: -0.030493341}
+    - - {x: -0.07058755, y: 1.0957973}
+      - {x: -0.35045922, y: 1.1202316}
+      - {x: -0.5954467, y: 0.9786249}
+      - {x: -0.6805699, y: 0.5389306}
+      - {x: -1.5207825, y: -0.09069797}
+      - {x: -1.5887983, y: -0.80222374}
+      - {x: -1.4657485, y: -1.4876477}
+      - {x: -0.50018495, y: -1.6273061}
+      - {x: 0.1030439, y: -1.6091225}
+      - {x: 0.5836185, y: -1.5378088}
+      - {x: 0.9704281, y: -1.2396975}
+      - {x: 1.2677796, y: -0.8969074}
+      - {x: 1.2763844, y: -0.15923856}
+      - {x: 1.1920835, y: 0.35416466}
+      - {x: 0.14861286, y: 0.67868227}
 --- !u!114 &7470705947577694744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +182,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f85b31371da4cec40a86dbba0b9befa6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2dcd477646d9024f91ebe4cd4c49e03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -219,7 +227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.44, y: 1.58}
+  m_AnchoredPosition: {x: 17.88, y: 1.11}
   m_SizeDelta: {x: 40, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8305477840232550857
@@ -292,8 +300,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282122487
-  m_fontColor: {r: 0.9686275, g: 0, b: 0.23529413, a: 1}
+    rgba: 4278252535
+  m_fontColor: {r: 0.96862745, g: 0.9537425, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -316,8 +324,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 16
-  m_HorizontalAlignment: 1
+  m_fontStyle: 17
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -346,7 +354,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 3.237144, z: 37.10907, w: 0}
+  m_margin: {x: 0, y: 3.237144, z: 36.182697, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

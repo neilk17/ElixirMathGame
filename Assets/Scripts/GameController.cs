@@ -45,24 +45,22 @@ public class GameController : MonoBehaviour
     public GameObject s16;
     public GameObject s17;
 
-    public GameObject q1;
-    public GameObject q2;
-    public GameObject q3;
-    public GameObject q4;
-    public GameObject q5;
-
     List<GameObject> numbers = new List<GameObject>();
     List<GameObject> operators = new List<GameObject>();
     List<GameObject> slots = new List<GameObject>();
-    List<GameObject> quests = new List<GameObject>();
     string inputs = "";
 
     public Scrollbar energyBar;
     public Slider goalBar;
-    float barMax;
+    public Slider progressBar;
+    float barMax = 1.0f;
     public GameObject goalText;
+    public GameObject progressText;
     public GameObject maxText;
     public Text levelText;
+    public GameObject scoreText;
+
+    int score = 0;
 
     int slotIndex = 0;
     int numOfNumbers = 1;
@@ -77,12 +75,10 @@ public class GameController : MonoBehaviour
     List<string> problemNum = new List<string>();
     List<string> problemOp = new List<string>();
 
-    int currentProblem = 1;
-
     string[] operatorList = { "+", "-", "*", "/" };
 
     int answer = -1;
-    int progress = 0;
+    int progress;
 
     public GameObject numberEffect;
     public GameObject operatorEffect;
@@ -94,20 +90,18 @@ public class GameController : MonoBehaviour
     float opEffectMaximum = 200f;
 
     public ProblemGenerator problemGenerator;
-    List<List<string>> allProblems = new List<List<string>>();
     int level = 1;
 
-    int questDone = 0;
-
-    List<bool> questsStatus = new List<bool>() { false, false, false, false, false };
-    List<bool> levelStatus = new List<bool>() { true, true, true, true, true };
-
     public GameObject potionObject;
-    public GameObject questObject;
     public GameObject resetButton;
     public GameObject quitButton;
 
     public GameObject audio;
+
+    public Timer timer;
+    int duration;
+    int normalDuration = 20;
+    int hardDuration = 6;
     void Start()
     {
         numEffectTime = numEffectMaximum;
@@ -148,41 +142,25 @@ public class GameController : MonoBehaviour
         slots.Add(s15);
         slots.Add(s16);
         slots.Add(s17);
-
-        quests.Add(q1);
-        quests.Add(q2);
-        quests.Add(q3);
-        quests.Add(q4);
-        quests.Add(q5);
-
         PauseGame();
         levelUI.SetActive(true);
 
-        TestingProblemSpace();
+        duration = 30;
 
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if (progress == answer)
-        {
-            QuestWin();
-        }
-        
+    {    
         if (progress < 0 || progress > barMax || numOfNumbers <= 0)
         {
             PauseGame();
             EndGame();
-        }
-
-        if (questDone >= 5)
+        } else if (progress == answer)
         {
             PauseGame();
             Win();
-        }
-
-        
+        }        
         
         if (numEffectTime < numEffectMaximum)
         {
@@ -199,14 +177,17 @@ public class GameController : MonoBehaviour
         {
             operatorEffect.SetActive(false);
         }
-        
+
+        progressText.GetComponent<Text>().text = progress.ToString();
+        progressBar.value = (float)(progress / barMax);
+
+        scoreText.GetComponent<Text>().text = score.ToString();
     }
 
     void PauseGame()
     {
         Time.timeScale = 0f;
         potionObject.SetActive(false);
-        questObject.SetActive(false);
         resetButton.SetActive(false);
         quitButton.SetActive(false);
     }
@@ -215,7 +196,6 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 1f;
         potionObject.SetActive(true);
-        questObject.SetActive(true);
         resetButton.SetActive(true);
         quitButton.SetActive(true);
     }
@@ -223,43 +203,28 @@ public class GameController : MonoBehaviour
     void Win()
     {
         progress = 0;
-        levelStatus[level - 1] = true;
-        if (level == 5)
+        if (level == 4)
         {
-            StartLevel();
+            score += 10;
         } else
         {
-            numberEffect.SetActive(false);
-            operatorEffect.SetActive(false);
-            winUI.SetActive(true);
+            score += 1;
         }
-    }
-
-    void QuestWin()
-    {
-        audio.GetComponent<Audio>().Win();
-        questsStatus[currentProblem - 1] = true;
-        questDone += 1;
-        progress = 0;
-        quests[currentProblem - 1].SetActive(false);
-        quests[currentProblem - 1].GetComponent<Button>().interactable = false;
-        Debug.Log(questsStatus[0]);
-        Debug.Log(questsStatus[1]);
-        Debug.Log(questsStatus[2]);
-        Debug.Log(questsStatus[3]);
-        Debug.Log(questsStatus[4]);
-        for (int i = 0; i < 5; i++)
+        
+        timer.End();
+        Debug.Log(score % 5 == 0);
+        if (score % 5 == 0 && duration >= 8)
         {
-            if (!questsStatus[i])
-            {
-                SetCurrent(i + 1);
-                break;
-            }
+            duration = duration - 2;
         }
+        audio.GetComponent<Audio>().Win();
+        StartLevel();
     }
 
-    void EndGame()
+    public void EndGame()
     {
+        PauseGame();
+        score = 0;
         progress = 0;
         audio.GetComponent<Audio>().Lose();
         numberEffect.SetActive(false);
@@ -281,15 +246,17 @@ public class GameController : MonoBehaviour
         int operatorIndex = 0;
 
         answer = int.Parse(problemSpace[0]);
-        barMax = 2 * answer;
-        goalText.GetComponent<Text>().text = answer.ToString();
-        goalBar.value = answer / barMax;
-        maxText.GetComponent<Text>().text = "Max: " + barMax.ToString();
+
+        int max = 0;
 
         for (int i = 1; i < problemSpace.Count; i++)
         {
             if (Array.IndexOf(operatorList, problemSpace[i]) == -1)
             {
+                if (int.Parse(problemSpace[i]) >= max)
+                {
+                    max = int.Parse(problemSpace[i]);
+                }
                 numbers[numberIndex].GetComponent<Dragger>().SetValue(problemSpace[i]);
                 numberIndex++;
             }
@@ -299,6 +266,19 @@ public class GameController : MonoBehaviour
                 operatorIndex++;
             }
         }
+
+        if (max < answer)
+        {
+            max = 2 * answer;
+        } else
+        {
+            max += 5;
+        }
+
+        barMax = max;
+        goalText.GetComponent<Text>().text = answer.ToString();
+        goalBar.value = answer / barMax;
+        maxText.GetComponent<Text>().text = "Max: " + barMax.ToString();
 
         for (int j = numberIndex; j < numbers.Count; j++)
         {
@@ -316,21 +296,12 @@ public class GameController : MonoBehaviour
 
     public void StartLevel()
     {
-        questDone = 0;
-        currentProblem = 1;
         levelUI.SetActive(false);
         winUI.SetActive(false);
-        allProblems = problemGenerator.getProblemSpace(level);
+        problemSpace = problemGenerator.getProblemSpace(level);
         ResumeGame();
-        SetProblem();
-        ResetQuests();
-        EditQuestSlots();
+        timer.Being(duration);
         ResetGame();
-    }
-
-    public void SetProblem()
-    {
-        problemSpace = allProblems[currentProblem-1];
     }
 
     public void ResetGame()
@@ -386,7 +357,7 @@ public class GameController : MonoBehaviour
             opEffectTime = 0f;
             operatorEffect.SetActive(true);
         }
-        float portion = progress / barMax;
+        float portion = (float)(progress / barMax);
         energyBar.size = portion;
 
     }
@@ -394,7 +365,19 @@ public class GameController : MonoBehaviour
     void evaluate()
     {
         DataTable dt = new DataTable();
-        progress = (int)dt.Compute(inputs, "");
+        if (inputs.Length >= 3)
+        {
+            if (inputs.Contains("/"))
+            {
+                double progressDb = (double)dt.Compute(inputs, "");
+                progress = (int)progressDb;
+            } else
+            {
+                progress = (int)dt.Compute(inputs, "");
+            }
+        }
+        
+        
     }
 
     public bool validInput(string value)
@@ -412,53 +395,43 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void SetCurrent(int i)
-    {
-        currentProblem = i;
-        SetProblem();
-        ResetGame();
-        EditQuestSlots();
-    }
-
     public void SetLevel(int i)
     {
         level = i;
         levelText.text = level.ToString();
-    }
-
-    public void EditQuestSlots()
-    {
-        for (int i = 0; i < 5; i++)
+        if (level == 4)
         {
-            if (i+1 == currentProblem)
-            {
-                quests[i].GetComponent<Quest>().CurrentProblem();
-            } else
-            {
-                quests[i].GetComponent<Quest>().NotCurrentProblem();
-            }
+            duration = hardDuration;
+        }
+        else
+        {
+            duration = normalDuration;
         }
     }
-
-    public void ResetQuests()
-    {
-        foreach (GameObject button in quests)
-        {
-            button.SetActive(true);
-            button.GetComponent<Button>().interactable = true;
-        }
-        questsStatus = new List<bool>() { false, false, false, false, false };
-    }
-
     public void LevelInterface()
     {
-        questDone = 0;
+        timer.End();
+        if (level == 4)
+        {
+            duration = hardDuration;
+        }
+        else
+        {
+            duration = normalDuration;
+        }
+        duration = normalDuration;
+        score = 0;
         levelUI.SetActive(true);
         PauseGame();
     }
 
-    public List<bool> GetLevelStatus()
+    public void ResetProblem()
     {
-        return levelStatus;
+        if (level == 4)
+        {
+            score = score - 2;
+        }
+        
+        ResetGame();
     }
 }

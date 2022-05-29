@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 1290710940995914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 30, y: 30, z: 1}
+  m_LocalScale: {x: 40, y: 40, z: 1}
   m_Children:
   - {fileID: 4099713178559088}
   - {fileID: 2146723925408554884}
@@ -142,16 +142,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.05215222, y: 1.4798001}
-      - {x: -0.6798285, y: 0.96939826}
-      - {x: -0.9717529, y: -0.0458972}
-      - {x: -0.82163215, y: -0.9447651}
-      - {x: -0.01635383, y: -1.2774689}
-      - {x: 0.6388908, y: -0.95487416}
-      - {x: 0.9170934, y: 0.021364301}
-      - {x: 1.3628376, y: 0.20123388}
-      - {x: 1.3607357, y: 1.2644327}
-      - {x: 0.61799383, y: 1.262626}
+    - - {x: 0.42406705, y: 1.1160318}
+      - {x: -0.008849528, y: 1.4874195}
+      - {x: -0.46048966, y: 1.0601612}
+      - {x: -0.44273406, y: 0.39378583}
+      - {x: -0.94449633, y: -0.014909923}
+      - {x: -0.7731042, y: -0.97106624}
+      - {x: -0.032824136, y: -1.2746453}
+      - {x: 0.56037444, y: -1.0072954}
+      - {x: 0.9261666, y: -0.016712248}
+      - {x: 0.84732634, y: 0.1363532}
+      - {x: 0.32486075, y: 0.41839626}
 --- !u!50 &4229766956353293266
 Rigidbody2D:
   serializedVersion: 4
@@ -222,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.03, y: 0.75}
+  m_AnchoredPosition: {x: -0.03, y: -0.2}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2677388155468438090
@@ -295,8 +296,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292214874
-  m_fontColor: {r: 0.3529412, g: 0, b: 0.83921576, a: 1}
+    rgba: 4278248191
+  m_fontColor: {r: 1, g: 0.8874891, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -319,7 +320,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

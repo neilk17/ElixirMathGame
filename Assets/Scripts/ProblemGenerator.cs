@@ -6,7 +6,6 @@ public class ProblemGenerator : MonoBehaviour
 {
     // Start is called before the first frame update
     int currentLevel = 1;
-    List<List<string>> problemSpace = new List<List<string>>();
     List<string> singProb = new List<string>();
     void Start()
     {
@@ -19,68 +18,59 @@ public class ProblemGenerator : MonoBehaviour
         
     }
 
-    public List<List<string>> getProblemSpace(int level)
+    public List<string> getProblemSpace(int level)
     {
-        problemSpace = new List<List<string>>();
         currentLevel = level;
-        int numOfProblem = 5;
-        for (int i = 0; i < numOfProblem; i++)
+        singProb = new List<string>();
+        
+        if (currentLevel == 1)
         {
-            problemSpace.Add(getRandProb());
+            return GetRandProb();
+        } else if (currentLevel == 2)
+        {
+            return GetRandProbAd();
+        } else
+        {
+            int ran = Random.Range(1, 3);
+            if (ran == 1)
+            {
+                return GetRandProb();
+            } else
+            {
+                return GetRandProbAd();
+            }
         }
-
-        return problemSpace;
     }
 
-    public List<string> getRandProb()
+    public List<string> GetRandProbAd()
+    {
+        int op = Random.Range(1, 3);
+        if (op == 1)
+        {
+            return getMultProb();
+        } else
+        {
+            return getDivPro();
+        }
+    }
+
+    public List<string> GetRandProb()
     {
         singProb = new List<string>();
         string operatorString;
         int const1, const2, const3, const4;
-
-        int max = 0;
-        int min = 0;
-        int opMax = 0;
-        int opMin = 0;
-        if (currentLevel == 1 || currentLevel == 3)
-        {
-            min = 2;
-            max = 11;
-        } else
-        {
-            min = 10;
-            max = 100;
-        }
-
-        if (currentLevel <= 2)
-        {
-            opMin = 1;
-            opMax = 3;
-        } else if (currentLevel <= 4)
-        {
-            opMin = 3;
-            opMax = 4;
-        } else
-        {
-            opMin = 1;
-            opMax = 4;
-        }
-
-
-        // Selecting random answer, constants and operator
-        //Random rnd = new Random();
-        int ans = Random.Range(min, max);
-        int const5 = Random.Range(min, max);
+        int ans = Random.Range(2, 11);
+        int const5 = Random.Range(1, 10);
         while (const5 == ans)
         {
-            const5 = Random.Range(min, max);
+            const5 = Random.Range(1, 10);
         }
-        int const6 = Random.Range(min, max);
+        int const6 = Random.Range(1, 10);
         while (const6 == ans)
         {
-            const6 = Random.Range(min, max);
+            const6 = Random.Range(1, 10);
         }
-        var operation = Random.Range(opMin, opMax);
+        var operation = Random.Range(1, 3);
         // var operation = 3;
 
         singProb.Add(ans.ToString());
@@ -88,15 +78,14 @@ public class ProblemGenerator : MonoBehaviour
         switch (operation)
         {
             case 1:
+                operatorString = "-";
+                singProb.Add(operatorString);
                 operatorString = "+";
                 singProb.Add(operatorString);
                 operatorString = "-";
                 singProb.Add(operatorString);
-                if (currentLevel == 5)
-                {
-                    operatorString = "*";
-                    singProb.Add(operatorString);
-                }
+                operatorString = "+";
+                singProb.Add(operatorString);
                 const1 = Random.Range(1, ans);
                 const2 = ans - const1;
                 const3 = Random.Range(1, ans);
@@ -114,11 +103,10 @@ public class ProblemGenerator : MonoBehaviour
                 singProb.Add(operatorString);
                 operatorString = "+";
                 singProb.Add(operatorString);
-                if (currentLevel == 5)
-                {
-                    operatorString = "*";
-                    singProb.Add(operatorString);
-                }
+                operatorString = "-";
+                singProb.Add(operatorString);
+                operatorString = "+";
+                singProb.Add(operatorString);
                 const1 = Random.Range(1, ans);
                 const2 = ans + const1;
                 const3 = Random.Range(1, ans);
@@ -130,31 +118,6 @@ public class ProblemGenerator : MonoBehaviour
                     }
                 }
                 const4 = ans + const3;
-                break;
-            case 3:
-                operatorString = "*";
-                singProb.Add(operatorString);
-                if (currentLevel == 5)
-                {
-                    operatorString = "-";
-                    singProb.Add(operatorString);
-                    operatorString = "+";
-                    singProb.Add(operatorString);
-                }
-                do
-                {
-                    const1 = Random.Range(1, ans);
-                } while (ans % const1 != 0);
-                const2 = ans / const1;
-                do
-                {
-                    const3 = Random.Range(1, ans);
-                    if (const3 == const1 || const3 == const2)
-                    {
-                        break;
-                    }
-                } while (ans % const3 != 0);
-                const4 = ans / const3;
                 break;
             default:
                 operatorString = "?";
@@ -173,6 +136,75 @@ public class ProblemGenerator : MonoBehaviour
         return singProb;
 
     }
+
+    public List<string> getMultProb()
+    {
+        singProb = new List<string>();
+
+        int const1 = Random.Range(2, 10);
+        int const2 = Random.Range(2, 10);
+        int ans = const1 * const2;
+
+        int ans2 = 0;
+        int const3 = 0;
+        int const4 = 0;
+        while (ans2 != ans)
+        {
+            const3 = Random.Range(2, 10);
+            const4 = Random.Range(2, 10);
+            ans2 = const3 * const4;
+        }
+
+        int const5 = Random.Range(2, 10);
+        int const6 = Random.Range(2, 10);
+
+        singProb.Add(ans.ToString());
+        singProb.Add("*");
+        singProb.Add("/");
+        singProb.Add("*");
+        singProb.Add("/");
+        singProb.Add(const1.ToString());
+        singProb.Add(const2.ToString());
+        singProb.Add(const3.ToString());
+        singProb.Add(const4.ToString());
+        singProb.Add(const5.ToString());
+        singProb.Add(const6.ToString());
+
+        Shuffle(singProb);
+
+        return singProb;
+    }
+
+    public List<string> getDivPro()
+    {
+        singProb = new List<string>();
+
+        int ans = Random.Range(2, 10);
+        int const1 = Random.Range(2, 10);
+        int const2 = const1 * ans;
+        int const3 = Random.Range(2, 10);
+        int const4 = const3 * ans;
+
+        int const5 = Random.Range(2, 10);
+        int const6 = Random.Range(2, 10);
+
+        singProb.Add(ans.ToString());
+        singProb.Add("*");
+        singProb.Add("/");
+        singProb.Add("*");
+        singProb.Add("/");
+        singProb.Add(const1.ToString());
+        singProb.Add(const2.ToString());
+        singProb.Add(const3.ToString());
+        singProb.Add(const4.ToString());
+        singProb.Add(const5.ToString());
+        singProb.Add(const6.ToString());
+
+        Shuffle(singProb);
+
+        return singProb;
+    }
+
 
     void Shuffle<T>(List<T> inputList)
     {
